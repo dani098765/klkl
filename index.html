@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Signup Web App</title>
+    <title>Firebase Login & Signup</title>
     <script type="module">
         // Import Firebase SDKs
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
         import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
 
-        // Firebase configuration
+        // Firebase configuration (Replace with your config)
         const firebaseConfig = {
-            apiKey: "AIzaSyBXfX6V3iwuxii4CltaLP0iki-6YDfJT54",
-            authDomain: "daniyal-8d3ca.firebaseapp.com",
-            projectId: "daniyal-8d3ca",
-            storageBucket: "daniyal-8d3ca.appspot.com",
-            messagingSenderId: "228452399331",
-            appId: "1:228452399331:web:7f7cba905210af5f53add6",
-            measurementId: "G-3DSKXKPLPP"
+             apiKey: "AIzaSyBn-qfYr9YwELJ63EXO3vp1UCVeFEggIwo",
+  authDomain: "test-30e49.firebaseapp.com",
+  projectId: "test-30e49",
+  storageBucket: "test-30e49.firebasestorage.app",
+  messagingSenderId: "569435244442",
+  appId: "1:569435244442:web:f806d9a02857d12acc5c23",
+  measurementId: "G-WMVBZ3YSYC"
         };
 
         // Initialize Firebase
@@ -57,7 +57,7 @@
                 });
         };
 
-        // Event listeners for forms
+        // Event listeners
         document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("signup-form").addEventListener("submit", (e) => {
                 e.preventDefault();
@@ -84,27 +84,24 @@
             text-align: center;
             padding: 20px;
         }
-
         form {
             margin: 20px auto;
             max-width: 300px;
             display: flex;
             flex-direction: column;
         }
-
         input, button {
             margin: 10px 0;
             padding: 10px;
             font-size: 16px;
         }
-
         button {
             cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>Firebase Login & Signup Web App</h1>
+    <h1>Firebase Login & Signup</h1>
 
     <!-- Signup Form -->
     <form id="signup-form">
